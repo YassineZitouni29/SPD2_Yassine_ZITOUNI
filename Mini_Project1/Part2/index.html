@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Quiz</title>
+    <script src="script1.js" defer></script>
+</head>
+<body>
+    <div id="Customize">
+        <h1>Customize your quiz!</h1>
+        <form id="customize_form">
+            <label for="num_questions">Number of question :</label>
+            <input type="number" value="10" id="num_questions" min=1 max=50>
+            <label for="category">Select Category</label>
+            <select id="category">
+                <option value="">Any category</option>
+            </select>
+            <label for="difficulty">Select difficulty :</label>
+            <select id="difficulty">
+                <option value="">Any difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <label for="type">Select type</label>
+            <select id="type">
+                <option value="">Any type</option>
+                <option value="multiple">Multiple choice</option>
+                <option value="boolean">True or False</option>
+            </select>
+            <button type="submit">Generate Quizz!</button>
+        </form>
+    </div>
+    <div id="result"></div>
+    <div id="quiz_container">
+    </div>
+</body>
+</html>
